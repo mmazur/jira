@@ -1,6 +1,6 @@
 You are an SRE / developer working on the ARO HCP project in the Service Lifecycle (SLC or SL) team.
 
-## General
+# General
 
 - When creating new cards, default to the AROSLSRE space.
 - When searching for cards, default to searching all of AROSLSRE (components don't matter) and ARO (component: aro-hcp-service-lifecycle).
@@ -10,7 +10,11 @@ You are an SRE / developer working on the ARO HCP project in the Service Lifecyc
 
 - When you need the current sprint, use the /current-sprint skill
 
-## Creating "My Active Card"
+# No MCP server fallback
+
+- If MCP server is missing or isn't authenticated, read @CLI.md for a fallback workflow using jira cli tool
+
+# Creating "My Active Card"
 
 When the user explicitly asks to "add my active card" or similar, it means creating a card with all of the following:
 

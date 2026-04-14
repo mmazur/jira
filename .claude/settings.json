@@ -1,6 +1,12 @@
 {
   "permissions": {
     "allow": [
+      "WebFetch(domain:redhat.atlassian.net)",
+      "Bash(jira --help:*)",
+      "Bash(jira issue create --help:*)",
+      "Bash(jira issue view:*)",
+      "Bash(jira me:*)",
+      "Bash(jira sprint list:*)",
       "mcp__atlassian__atlassianUserInfo",
       "mcp__atlassian__getAccessibleAtlassianResources",
       "mcp__atlassian__getConfluenceCommentChildren",
