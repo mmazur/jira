@@ -14,6 +14,16 @@ You are an SRE / developer working on the ARO HCP project in the Service Lifecyc
 
 - If MCP server is missing or isn't authenticated, read @CLI.md for a fallback workflow using jira cli tool
 
+# Creating "My IC / Oncall / Shift Card"
+
+When the user explicitly asks to "add my IC card" or similar (shift / oncall), it means creating a card with all of the following:
+
+1. Project: AROSLSRE
+2. Assignee: current user
+3. Sprint: NONE
+4. Label: "oncall"
+5. Status: move to "In Progress" after creation
+
 # Creating "My Active Card"
 
 When the user explicitly asks to "add my active card" or similar, it means creating a card with all of the following:
