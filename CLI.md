@@ -22,6 +22,15 @@ To create a new issue in the AROSLSRE project:
 jira issue create -p AROSLSRE -t <type> -s "<summary>" -b "<description>"
 ```
 
+**Important:** Do not use `\n` inside quoted strings for newlines — they are passed literally. Use a multiline variable instead:
+
+```bash
+body="First line.
+
+Second paragraph."
+jira issue create -p AROSLSRE -t Task -s "Summary" -b "$body" --no-input
+```
+
 ### Common Issue Types
 - `Bug` - For bug reports
 - `Task` - For general tasks
