@@ -61,20 +61,19 @@ Epics require a custom field called "Epic Name" in addition to the summary. **Im
 jira issue create -p AROSLSRE -t Epic -s "Velero image updating" -b "Epic description" --custom "epic-name=Velero image updating"
 ```
 
-### Linking Tasks to Epics
+### Linking Tasks to Epics (and Epics to Initiatives)
 
-To add an existing task to an epic, use the `epic-link` custom field:
-
-```bash
-# Link a task to an epic
-jira issue edit AROSLSRE-123 --custom "epic-link=AROSLSRE-456" --no-input
-```
-
-Alternatively, you can set the parent epic when creating a new task:
+Use `-P` / `--parent` on both `create` and `edit` to set a parent at any level of the hierarchy:
 
 ```bash
 # Create a task under an epic
-jira issue create -p AROSLSRE -P AROSLSRE-456 -t Task -s "Task summary" -b "Task description"
+jira issue create -p AROSLSRE -t Task -s "Task summary" -P AROSLSRE-456
+
+# Create an epic under an initiative
+jira issue create -p AROSLSRE -t Epic -s "My epic" -P ARO-24683
+
+# Set or change a parent on an existing issue
+jira issue edit AROSLSRE-123 -P AROSLSRE-456 --no-input
 ```
 
 ### Useful Flags
