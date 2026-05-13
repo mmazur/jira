@@ -8,7 +8,7 @@ You are an SRE / developer working on the ARO HCP project in the Service Lifecyc
 
 # Sprints
 
-- When you need the current sprint, use the /current-sprint skill
+- When you need the current sprint, use the /aro-hcp-slc-current-sprint skill
 
 # No MCP server fallback
 
